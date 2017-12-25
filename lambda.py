@@ -7,9 +7,9 @@ import pandas as pd
 mx = lambda x, y: x + y if x > y  else y * x
 print(mx(4, 5))
 
-# -------------------
-# Example of map
-# -------------------
+# -----------------------------------------------------
+# Example of map. Map takes function and list as input.
+# -----------------------------------------------------
 s = pd.Series([1, 2, 3, 4])
 print(list(map(lambda x: 3*x, s)))
 
