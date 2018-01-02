@@ -1,7 +1,6 @@
 Python common operations
 <br>
-1. Lambda <br>
-2. Map <br>
-3. Filter <br>
-4. Reduce <br>
-5. Generators <br>
+1. <a href="https://github.com/rajan2275/Python-common-operations/blob/master/lambda.py">Lambda, Map, Filter, Reduce</a>
+2. <a href="https://github.com/rajan2275/Python-common-operations/blob/master/generators.py">Generators</a>
+3. <a href="https://github.com/rajan2275/Python-common-operations/blob/master/rounding.py">Rounding</a>
+4. <a href="https://github.com/rajan2275/Python-common-operations/blob/master/dictToTuple.py">Convert dictionary to Tuple</a>
