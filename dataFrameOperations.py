@@ -28,4 +28,22 @@ df = pd.DataFrame(data)
 print(df)
 print('----------------------------------')
 
+# -------------------
+# DataFrame
+# -------------------
+print('Describe DataFrame')
+print('----------------------------------')
 print(df.describe())
+print('----------------------------------')
+print('head function DataFrame')
+print('----------------------------------')
+print(df.head(1))
+print('----------------------------------')
+print('tail function DataFrame')
+print('----------------------------------')
+print(df.tail(1))
+print('----------------------------------')
+
+
+
+
