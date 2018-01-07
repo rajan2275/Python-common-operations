@@ -17,8 +17,8 @@ def monthly():
     print('monthly.')
 
 
-def get_date(rebalance):
-    rebalance.period()
+def get_date(fnc, rebalance):
+    fnc
 
 
 class period(Enum):
@@ -30,11 +30,10 @@ class period(Enum):
 
 
 class Rebalance:
-    def __init__(self, period, period_start):
-        self.period = period
+    def __init__(self, period_start):
         self.period_start = period_start
 
 
 if __name__ == '__main__':
-    rebalance = Rebalance(period.annual, '2')
-    print(get_date(rebalance))
+    rebalance = Rebalance('2')
+    print(get_date(period.annual, rebalance))
