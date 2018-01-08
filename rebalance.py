@@ -1,5 +1,5 @@
 from enum import Enum
-
+from functools import partial
 
 def annual():
     print('annual.')
@@ -22,10 +22,10 @@ def get_date(fnc, rebalance):
 
 
 class period(Enum):
-    annual = annual()
-    semi_annual = semi_annual()
-    quarterly = quarterly()
-    monthly = monthly()
+    annual = 1
+    semi_annual = 2
+    quarterly = 3
+    monthly = 4
 
 
 
@@ -34,6 +34,12 @@ class Rebalance:
         self.period_start = period_start
 
 
+def entry(period):
+    if period == period.annual: get_date(annual(), rebalance)
+    if period == period.semi_annual: get_date(semi_annual(), rebalance)
 if __name__ == '__main__':
     rebalance = Rebalance('2')
-    print(get_date(period.annual, rebalance))
+    entry(period.annual)
+    entry(period.semi_annual)
+  #
+
